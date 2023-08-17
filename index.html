@@ -9,13 +9,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-auth-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>    
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-    <h1>Thread app</h1>
+    <h1>Thread app (SignUp)</h1>
     <hr>
     <form>
         <fieldset>
@@ -23,33 +26,33 @@
             <legend>
                 <h2>Signup</h2>
             </legend>
-            <fieldset>
+            <div>
 
                 <label for="userName">Username:</label> <br>
                 <i class="bi bi-person-fill"> <input type="text" id="userName" size="15" maxlength="25" placeholder="Enter username.."></i>
 
-            </fieldset>
+            </div>
             <br>
 
-            <fieldset>
+            <div>
 
                 <label for="emailAddrss">Email address</label> <br>
                 <i class="bi bi-envelope-at-fill"> <input type="text" id="emailAddress" size="35" maxlength="50" placeholder="Enter email address.."></i>
 
-            </fieldset>
+            </div>
             <br>
 
-            <fieldset>
+            <div>
 
                 <label for="Password">Password:</label> <br>
                 <i class="bi bi-person-fill-lock"> <input type="password" autocomplete="new-password" id="Password" size="16" minlength="4" maxlength="8" placeholder="Enter 8 digit password.."></i>
-            </fieldset>
+            </div>
+        </fieldset>
     </form>
-    </fieldset>
 
     <button type="submit" onclick="signUp(event)">REGISTER</button>
 
-    <p>alraedy have a account?<a href="./login.html">Login</a></p>
+    <p>alraedy have a account? <a href="./login.html">Login</a></p>
 
     <script type="module" src="thread.js"></script>
 </body>

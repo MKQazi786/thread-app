@@ -24,12 +24,17 @@ window.signUp = (event) => {
   firebase.auth().createUserWithEmailAndPassword(email, password)
   .then((userCredential) => {
     // Signed in 
-    var user = userCredential.user;
+    alert("new user is registered")
+      let user = userCredential.user;
+      console.log("user: ", user)
+      window.location = "login.html"
     // ...
   })
   .catch((error) => {
     var errorCode = error.code;
     var errorMessage = error.message;
+    console.log("firebase signup error: ", error)
+
     // ..
   });
   
